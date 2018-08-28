@@ -66,17 +66,18 @@ div.aboutme-text {
 @media (min-width: 768px) {
 
 div.about-text {
-  padding: 2vw 3.5vw;
+  padding: 2.4vw 4vw;
 }
 
 h2 {
   margin-bottom: 1.5vw;
-  font-size: 2vw;
-  line-height: 3vw;
+  font-size: 1.9vw;
+  line-height: 3.3vw;
 }
 
 div.aboutme-text {
-  font-size: 1.65vw;
+  margin: 1vw 0;
+  font-size: 1.5vw;
   line-height: 2.7vw;
 }
 }
@@ -84,15 +85,16 @@ div.aboutme-text {
 @media (max-width: 767px){
 
 div.about-text {
-  padding: 20px 35px;
+  padding: 30px 40px;
 }
 
 h2 {
-  margin-bottom: 1.5vw;
+  margin-bottom: 2.5vw;
   font-size: 3.2vw;
 }
 
 div.aboutme-text {
+  margin: 1vw 0;
   font-size: 2.6vw;
   line-height: 3.4vw;
 }
