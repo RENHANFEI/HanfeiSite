@@ -1,0 +1,438 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+
+<div class="banner">
+    <div id="banner-text">
+        <h1>Cubicle</h1>
+        <p>An Adaptive Educational Gaming Platform for Training Spatial Visualization Skills.</p>
+    </div>
+    <p class="visible-lg visible-md visible-sm" align="center" id="skrollr">
+        <img align="center" src="/static/image/cubicle/object.png" alt="cubicle object">
+    </p>
+</div>
+
+<div class="details">
+    <div class="summary-block">
+        <h2>Summary</h2>
+        <div class="heading-line"><br/></div>
+        <p>Cubicle was designed to motivate first year engineering students to take part in an online workshop and to
+            train their spatial visualization skills, which are crucial for success in STEM disciplines. Subjects with
+            different levels of spatial ability played our game and expressed a strong interest in using the game to
+            train their spatial visualization skills. In addition, our analysis of players’ in- game behaviors shows the
+            potential benefits of implementing adaptive and personalized learning guidance.</p>
+        <p><b>Publication:</b>
+            <a target="_blanket" href="/static/cubicle.pdf">Ziang Xiao, Helen C Wauck, Zeya Peng, <u><b>Hanfei
+                Ren</b></u>, Lei Zhang, Shiliang Zuo, Yuqi Yao, Wai-tat Fu. 2017. An Adaptive Educational Gaming
+                Platform for Training Spatial Visualization Skills. Accepted by the 23Rd International Conference on
+                Intelligent User Interfaces (IUI ’18)</a></p>
+        <p><b>Game Download (Beta): </b>
+            <a href="/static/Cubicle_mac.zip">Mac</a>
+            <a href="/static/Cubicle_win32.zip">Win32</a>
+            <a href="/static/Cubicle_win64.zip">Win64</a></p>
+    </div>
+</div>
+
+<div class="overview">
+    <div class="row overview-container">
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-time"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Duration</h3>
+                <h4>July - Sep 2017</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Supervisor</h3>
+                <h4>
+                    <a class="dashlink" target="_blanket" href="http://cascade.cs.illinois.edu/people/wfu/">Wai-tat Fu @
+                        UIUC</a></h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-user"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>My Role</h3>
+                <h4>Game Designer<br/>Developer<br/>(7-member team)</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Skills</h3>
+                <h4>Game Design<br/>Development (Unity)<br/>Research</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="details">
+
+    <div class="details-block">
+        <h2>Background</h2>
+        <div class="heading-line"><br/></div>
+        <p>Research has demonstrated that spatial visualization skills are crucial for success in STEM disciplines. With
+            an increasing number of students entering STEM disciplines, the question of how to effectively train
+            students’ spatial visualization skills has become very important. Cascade Lab <a class="text-link"
+                                                                                             href="http://cascade.cs.illinois.edu/spatial.html">SpatialCS</a>
+            research group investigates the effect of video game training and web platform on spatial reasoning skills,
+            in order to provide evidence-based recommendations to researchers, game designers, and educators about the
+            best ways to train spatial skills for specific target populations. In this study, we studied gamification as
+            a way to motivate first year engineering students to take part in an online workshop and to train their
+            spatial visualization skills.</p>
+    </div>
+
+    <div class="details-block">
+        <h2>Process</h2>
+        <p align="center">
+        <div class="heading-line"></div>
+        </p>
+        <div class="s-container">
+            <p>By reading through the textbook and exercise book, we listed ten types of exercise, each aimed at testing
+                a different component of spatial visualization. Meanwhile, I did <a
+                        href=”https://docs.google.com/document/d/16MQJ4SsVgzkdSWBoroudF4wV-2kUyojKVTGVXcRJDrw/edit”>an
+                    investigation into certain similar project</a> in order to get some inspiration on future work.</p>
+            <h4>Preliminary Experience</h4>
+            <img class="pimg" src="/static/image/cubicle/experience.jpg">
+        </div>
+        <div class="s-container">
+            <p>To make our gaming platform easy and interesting, we decided to set our game in a labyrinth. The premise
+                of the game is that the player is trapped in a dungeon maze. To escape, the player needs to navigate
+                through the maze and unlock all the rooms. The player starts from a large center room with multiple
+                smaller adjoining rooms. Each smaller room contains a totem, the entry to a game module. In each game
+                module, a chain of locked rooms contains different levels in that game module. Finishing the game task
+                in the room is the only way to unlock the door to the next room.</p>
+            <h4>the Dungeon Maze</h4>
+            <img class="pimg" src="/static/image/cubicle/maze.jpg">
+        </div>
+        <div class="s-container">
+            <p>Thus it came to the module design. We generated some initial ideas respectively then exchanged the ideas.
+                I, referred to certain similar applications and games, along with the exercise in the textbooks, did a
+                brainstorming, to come up with seven games. After checking ideas of coworkers, we started
+                developing.</p>
+            <div class="slim">
+                <h4>Brainstorming</h4>
+                <img class="pimg" src="/static/image/cubicle/brainstorming.jpg">
+            </div>
+            <p>I selected three ideas to do further development.</p>
+            <h4>Sketch of Selected Ideas</h4>
+            <div class="row">
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/pe_brainstorming.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/vp_brainstorming.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/tl_brainstorming.jpg">
+                </div>
+            </div>
+            <!-- <img class="pimg" src="/static/image/cubicle/selected_ideas.jpg"> -->
+        </div>
+        <div class="s-container">
+            <h3>- Plane Exploration</h3>
+            <p>My first game was Plane Exploration, which is also the one that experienced most changes, designed to
+                train 3D object visualization and perspective taking. Similar to "Orthographic Drawings" in Sorby’s
+                book, the player needs to understand standard orthographic drawings and mentally visualize the
+                corresponding 3D model in order to win.</p>
+            <p>To test the player reasonably, I decided to let the user explore every plane he/she can go in the map,
+                which was a way that could test player’s visualization of each plane, preventing meaningless cheating
+                and trying actions effectively at the same time. Referred to the textbook, I sketched the landscapes and
+                modeled them in Unity.</p>
+            <h4>Landscapes</h4>
+            <img class="pimg" src="/static/image/cubicle/models.jpg">
+            <p>However, this mechanics was thought to be a little abstruse and not interesting enough. So I discussed
+                with my coworkers and modified it to a goal-reaching mechanics, namely, the player has to guide a yellow
+                square across a 3D landscape model to an orange square, with only orthographic views available. The game
+                allows the player to climb upward or down via ramps but not stairs, so it is critical for the player to
+                mentally visualize the 3D landscape before deciding which way to go. If the yellow square falls through
+                a stair, the game is over.The difficulty of each level is controlled by the complexity of the 3D
+                landscape model.</p>
+            <div class="row">
+                <h4>Game Interface and Testing</h4>
+                <div class="min-padding col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/pe_interface.png">
+                </div>
+                <div class="min-padding col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/pe_testing.jpg">
+                </div>
+            </div>
+            <p>The 3D landscape models in the game come from existing spatial visualization training material, which
+                follows the display rule of orthographic drawings in engineering graphics as well. A player’s
+                performance is measured by how long it takes for the player to reach the orange square and how many
+                failed attempts are made.</p>
+            <div class="row">
+                <h4>Log Format</h4>
+                <div class="small-padding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th><i>Column</i></th>
+                            <th><i>About</i></th>
+                        </tr>
+                        </thead>
+                        <tbody align="left">
+                        <tr>
+                            <td>Timestamp</td>
+                            <td>The time the player starts the level</td>
+                        </tr>
+                        <tr>
+                            <td>Trial Num</td>
+                            <td>Times the player has tried(failed) this level</td>
+                        </tr>
+                        <tr>
+                            <td>Level Num</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Result</td>
+                            <td>The player wins or fails this trial</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="small-padding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th><i>Column</i></th>
+                            <th><i>About</i></th>
+                        </tr>
+                        </thead>
+                        <tbody align="left">
+                        <tr>
+                            <td>Timestamp</td>
+                            <td>The time the player does a certain operation</td>
+                        </tr>
+                        <tr>
+                            <td>X Operation</td>
+                            <td>The player's operation on x direction</td>
+                        </tr>
+                        <tr>
+                            <td>Z Operation</td>
+                            <td>The player's operation on z direction</td>
+                        </tr>
+                        <tr>
+                            <td>Position</td>
+                            <td>The player's position in the 3D map</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <p><br/>Two kinds of csv files are used to log user's operation for Plane Exploration, one of which records
+                the
+                basic information of a certain trail, including the time that the user starts playing the level, the
+                level number, the duration of the trial and the result. The other table, named after the timestamp,
+                records detailed operations of a trial.</p>
+        </div>
+
+        <div class="s-container">
+            <h3>- View Point</h3>
+            <p>It is my second game, lacking in close relation with exercise on textbook yet can test player’s
+                understanding of views directly. In this game, the player is asked to mentally visualize a
+                three-dimensional landscape from a two-dimensional map and determine the observation point that is
+                being displayed. Mental rotation is needed to correctly visualize the scenes.</p>
+            <p>In the game, a variety of solid shapes are randomly generated on a circular base, with a camera
+                randomly chosen from eight candidates, each with a different position and angle. All candidate
+                cameras face the center of the base. The player needs to determine where the camera is based on the
+                view of the chosen camera and the top view of the scene. The number of solids on the circular base
+                increases with the game’s difficulty.</p>
+            <h4>Game Interface</h4>
+            <div class="row">
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/vp_ui1.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/vp_ui2.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/vp_ui3.jpg">
+                </div>
+            </div>
+            <p>I made four similar groups and four dissimilar groups of the solids to control the difficulty. For
+                instance, a similar group contains cone, triangular pyramid and rectangular pyramid when a
+                dissimilar group contains cylinder, ring and pyramids. The levels are divided into three parts, with
+                each part including four levels. In the first part, the scene is generated from dissimilar solid
+                groups. In the second part, the scene is generated randomly. And in the third part, the scene is
+                generate from similar solid groups. After playing each part, the player can get a score, with 100 as
+                the maximum grade.</p>
+            <p>The log file records the timestamp, the models, the timespan and the result.</p>
+        </div>
+        <div class="s-container">
+            <h3>- Transform Limitation</h3>
+            <p>The Transform Limitation game is my favorite one. The Transform Limitation game taps into the
+                player’s mental rotation ability. In this game, the player is asked to rotate or mirror a 3D object
+                to match a target object within a limited number of steps. In each step, the player either rotates
+                the object 90 degrees about an axis, or mirrors the object once.</p>
+            <h4>Game Interface</h4>
+            <div class="row">
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/tl_ui1.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/tl_ui2.jpg">
+                </div>
+                <div class="min-padding col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <img class="pimg" src="/static/image/cubicle/tl_ui3.jpg">
+                </div>
+            </div>
+            <p>Since the number of steps is limited, the player needs to mentally rotate and visualize the result
+                before taking an action. The difficulty of the game progresses as the number of operations required
+                increases and the number of operations allowed decreases.</p>
+            <p>Every object is generated randomly in a 3 by 3 cube, logged as a 27-digit binary number. Player's trials and detailed operations are logged in two tables.</p>
+        </div>
+
+
+    </div>
+
+
+    <div class="details-block">
+        <h2>Product</h2>
+        <div class="heading-line"><br/></div>
+        <div class="row">
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/maze2.jpg">
+                <p>Players are in a dungeon maze where each room has a game task.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/bb.jpg">
+                <p>Block Builder: Building model from its corresponding orthographic views.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/csg.jpg">
+                <p> Constructive Solid Geometry: Construct- ing 3D model from given primitive objects.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/pe.jpg">
+                <p>Plane Exploration: Navigating on a 3D landscape with only orthographic views of the landscape.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/cs.jpg">
+                <p>Cube Shift: Keeping track of a series of cube shifting and idenfying the missing emoji.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/fp.jpg">
+                <p>Flat Pattern: Unfolding a 3D object to a target 2D pattern.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/vp.jpg">
+                <p>View Point: Determining the View Point from a 2D map.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/tl.jpg">
+                <p>Transform Limitation: Manipulating a 3D object to match the target within limited steps.</p>
+            </div>
+            <div class="small-padding col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 15px 0 10px 0;" src="/static/image/cubicle/rs.jpg">
+                <p>Shape Revolving: Drawing the revolving axis for a 2D shape to form 3D object.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="details-block">
+        <h2>Test</h2>
+        <div class="heading-line"><br/></div>
+        <p>To test our game platform in the field and validate our research hypotheses, we conducted a mixed-method
+            study, in-game behavior analysis and qualitative interview, with participants from three entry-level
+            engineering graphics courses at UIUC. All courses focus on the various aspects of engineering drawings where
+            the spatial visualization skills are strongly emphasized.</p>
+        <p>We collected a large amount of player behavior data from our participants. Data collected for each player
+            focused primarily on three major aspects: 1) <abbr style="border-bottom: 0;"
+                                                               title="the percentage of levels they completed">Game
+                Progress</abbr>, 2) <abbr style="border-bottom: 0;"
+                                          title="the time in seconds taken to complete each level">Completion
+                Time</abbr>, and 3) <abbr style="border-bottom: 0;" title="how many failed attempts (resets) a player made before they successfully completed a level
+">Error Rate</abbr>.</p>
+        <p>We had the following <b>three hypotheses</b> for this user study.</p>
+        <ul class="text">
+            <li><b>H1: </b>Players’ existing spatial visualization skills will be correlated with their in-game
+                behavior metrics.
+                More specifically, players with lower level of spatial visualization skills will spend more time to
+                complete a level and make more errors.
+            </li>
+            <li><b>H2: </b>Players with higher spatial visualization skills will explore and complete more game levels
+                than
+                players with lower spatial visualization skills.
+            </li>
+            <li><b>H3: </b>Players will be intrinsically motivated to use our platform to train their spatial
+                visualization
+                skills.
+            </li>
+        </ul>
+        <p>We performed a hierarchical two-stage correlation analysis, starting with the aggregate in-game player
+            behavior metrics for the game as a whole and then looking into the in-game player behavior metrics for each
+            game module.</p>
+        <div class="slim">
+            <h4>Correlation Table</h4>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th><i>In-Game Player Behavior Metrics</i></th>
+                    <th><i>PSVT:R Score</i></th>
+                </tr>
+                </thead>
+                <tbody align="left">
+                <tr>
+                    <td><b>Aggregated 8 Game Modules</b></td>
+                </tr>
+                <tr>
+                    <td>Game Progress</td>
+                    <td>.21</td>
+                </tr>
+                <tr>
+                    <td>Average Level-completion Time</td>
+                    <td>-.99**</td>
+                </tr>
+                <tr>
+                    <td>Average Error Rate</td>
+                    <td>-.97**</td>
+                </tr>
+                </tbody>
+            </table>
+            <p>The correlation table for players’ PSVT:R score and their in-game player behavior metrics of all game
+                modules aggregated. Note. * indicates p < .05; ** indicates p < .01.</p>
+        </div>
+        <p>Our results indicate that our gaming platform, Cubicle, tapped into players’ spatial visualization skills,
+            <b>supporting our hypothesis H1</b>. We found that players with lower spatial visualization skills tend to
+            spend more time on each level of the game and make more errors. In addition, participants exhibited a high
+            level of willingness and enthusiasm to use Cubicle for future training, especially those with lower level of
+            spatial ability, <b>supporting our hypothesis H3</b>. However, our <b>H2 is not supported</b> by the result
+            that players’ spatial visualization skills do not predict how many game levels they complete. Game
+            progress can be used to infer how engaging players find our game. The game allows players to make an
+            unlimited number of attempts on each level, and we give our participants more than enough time to play the
+            game. Therefore, as long as players are engaged in our game, they will achieve a similar level of game
+            progress. Thus, one way to interpret this result is players were equally engaged in our game regardless of
+            their existed spatial visualization skills.</p>
+        <p><b>See details: </b><a target="_blanket" href="/static/cubicle.pdf">Ziang Xiao, Helen C Wauck, Zeya Peng, <u><b>Hanfei
+            Ren</b></u>, Lei Zhang, Shiliang Zuo, Yuqi Yao, Wai-tat Fu. 2017. An Adaptive Educational Gaming
+            Platform for Training Spatial Visualization Skills. Submitted to the 23Rd International Conference on
+            Intelligent User Interfaces (IUI ’18)</a></p>
+    </div>
+
+    <a class="back-to-top" href="javascript:window.scrollTo( 0, 0 );"><h6>↑ Back to Top</h6></a>
+
+</div>
+
+
+{% endblock %}
+

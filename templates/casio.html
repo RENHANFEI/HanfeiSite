@@ -1,0 +1,762 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+
+<div class="banner">
+    <div id="banner-text">
+        <h1>Casio IUR</h1>
+        <p>Developed a selfie camera and a visual communication platform that will potentially become popular in the
+            near future.</p>
+    </div>
+    <p class="visible-lg visible-md visible-sm" align="center" id="skrollr">
+        <img align="center" src="/static/image/casio/model.png">
+    </p>
+</div>
+
+<div class="details">
+    <div class="summary-block">
+        <h2>Summary</h2>
+        <div class="heading-line"><br/></div>
+        <p>In the industry-university research project between Casio and International Design Institute of
+            ZJU, I, along with my teammates, designed promising selfies cameras Maru, UFOO, Planet and a visual platform
+            Message Mirror.</p>
+    </div>
+</div>
+
+<div class="overview">
+    <div class="row overview-container">
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-time"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Duration</h3>
+                <h4>Sep 2016 - Apr 2017</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Supervisor</h3>
+                <h4>Casio</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-user"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>My Role</h3>
+                <h4>User Researcher<br/>Product Designer<br/>Interface Designer<br/>(4-member team)</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Skills</h3>
+                <h4>User Research<br/>Sketch<br/>Prototyping</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="details">
+
+    <div class="details-block">
+        <h2>Background</h2>
+        <div class="heading-line"><br/></div>
+        <p>Casio has been dominating and saving the dying compact camera market in Asia with its TR series of cameras
+            over the past few years. Being aggressively focused on one thing: perfect selfies, Casio has found the right
+            product and right market.</p>
+        <p>Casio never stops to look for promising products in visual areas. By doing industry-university research with
+            International Design Institute of ZJU and working with us young designers from different majors, they have got some new inspirations.</p>
+    </div>
+
+    <div class="details-block">
+        <h2>Selfie Camera</h2>
+        <p align="center">
+        <div class="heading-line"></div>
+        </p>
+        <div class="s-container">
+            <p>Our first subject was to design a selfie camera that would prevail among young people in two years. To
+                discover young people’s interested points on selfie and determine our focus in design, we independently
+                collected three kinds of photos -- our favorite photos, our friends’ favorite selfies of themselves,
+                interesting selfies online. Then, we exchanged our ideas on these photos, divided them into three
+                groups, classified photos in each groups and sticked them on paper respectively.</p>
+            <h4>Selfie Collection and Classification</h4>
+            <img class="pimg" src="/static/image/casio/selfie_collection.jpg">
+            <p>We got most inspiration from our friends’ favorite selfies. Difficult as it was to classify them, we got
+                certain fashion selfie patterns from our collection, coming to the conclusion that good photo
+                composition and unconstrained shooting methods are of key importance.</p>
+        </div>
+        <div class="s-container">
+            <p>Each group got two popular products of Casio, TR-80 and EX-FR100, the former of which was a popular
+                selfie camera with fantasy appearance and amazing beautification functions, meanwhile the later one
+                detached the camera from the controller to provide more free-style shootings.</p>
+            <div class="slim">
+                <h4>EX-FR100 and TR-80</h4>
+                <img class="pimg" src="/static/image/casio/competitive.jpg">
+            </div>
+            <p>My group was completed attracted by FR100’s special structure but got confused with its market occupation -- actually most of us even had not heard about it before. So we tried to take some photos using
+                it and immediately found its shortcomings. Innovative as it was to detach the camera and put it at a
+                special shooting angle, we could not locate the camera at a desirable place at the
+                first trial so that we had to constantly adjust the camera. It meant that, we had to firstly put the
+                camera at a certain place, usually on the floor or at a high shelf, secondly we went back for our
+                posture, then we checked the picture composition on the controller -- well, if we found the camera did
+                not sit at a right place, we had to go back to it to adjust it again. It was a really bothering
+                experience.</p>
+            <p>Also, we found the controller was somehow unnecessary. It looked like a common cellphone with simplest
+                functions such like shooting and viewing the gallery. A common smart phone could replace it. </p>
+        </div>
+        <div class="s-container">
+            <p>With the first-stage analysis on photos and current cameras, we did brainstorming and got our first two
+                ideas -- Maru and UFOO.</p>
+            <p>Maru had two main features -- remote control and customizable appearance.</p>
+            <h4>APP Interface</h4>
+            <img class="pimg" src="/static/image/casio/maru_interface.jpg">
+            <p>Our detection of FR100’s inconvenient manipulation gave birth to Maru’s first feature. Instead of
+                providing the users with separate camera and controller, we abandoned the controller and replaced it
+                with an application on smart phone. Moreover, we designed a diversity of controlling methods -- not only
+                could we choose a shooting time but also we could change the shooting angle of the camera. As a matter
+                of fact that it was hard to make the camera ‘run’ on itself, a range of self-rotation was enough to
+                reduce most troubles caused by adjustment.</p>
+            <h4>Functional Shells</h4>
+            <div class="row">
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/maru1.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/maru2.jpg">
+                </div>
+            </div>
+            <p>Considering young people’s deep concern on aesthetic and personality, we left our product simple sphere
+                appearance with many a shell design, which could make the camera a lovely accessory and provide certain
+                functions at the same time. For instance, the octopus shell could serve as a holder of adjustable height
+                when the Sunny Doll shell could help fix the camera on the phone for common easy selfie.</p>
+            <h4>Customized Shells</h4>
+            <div class="row">
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/maru_shell.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/maru_bag.jpg">
+                </div>
+            </div>
+            <p>We called our product Maru, which meant circle in Japanese, given its global appearance and the word’s
+                lovely pronunciation.</p>
+        </div>
+
+        <div class="s-container">
+            <p>Our second idea was UFOO, inspired by some alluring photos took by tracking a series of movement and put
+                them on a single picture. We wanted a camera that could track and shoot photos intelligently. We
+                employed magnetic suspension technology to make our camera float freely, namely rotate and adjust height
+                freely, over its base. Besides, panoramic photographing, snap shooting and normal shooting were added to
+                its functions.</p>
+            <h4>Appearance and Functions</h4>
+            <div class="row">
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/ufoo1.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/ufoo2.jpg">
+                </div>
+            </div>
+            <p>We designed a two-pie structure for it, with a flexible camera on top that could float on the base or
+                worked independently as a convenient camera.</p>
+            <h4>Expected Photos</h4>
+            <img class="pimg" src="/static/image/casio/ufoo_photo.jpg">
+            <p>This idea was named as UFOO since its two-pie structure looked like two UFOs and it adapted magnetic
+                high-tech.</p>
+        </div>
+
+        <div class="s-container">
+            <p>We followed Maru’s idea to do further design. After several discussions with the designers from Casio, we
+                found our Maru not so focused or innovative. It did improve certain disadvantages of FR100 and provide
+                its own seemingly attractive appearance, but was actually lacking in its key feature.</p>
+            <p>We supposed that video shooting was a potential market that had not been fully tapped so that we turned
+                to video shooting. Chewed on some popular videos online, we found a kind of popular and indeed
+                attractive videos -- dance videos. Energetic dace steps, decorated with moving shots, exerted amazing
+                fascination on viewers. The most popular video even enjoyed more than one million views in a single
+                day.</p>
+                <h4>'Dance' on the Internet</h4>
+                <div class="row">
+                    <div class="non-padding col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                        <img class="pimg" src="/static/image/casio/baidu_dance.jpg">
+                    </div>
+                    <div class="non-padding col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                        <img class="pimg" src="/static/image/casio/videos.jpg">
+                    </div>
+                </div>
+<!--             <div class="slim">
+                <h4>'Dance' on the Internet</h4>
+                <img class="pimg" src="/static/image/casio/baidu_dance.jpg">
+                <h4>Dance Videos on <abbr
+                        title="a video sharing website themed around anime, manga, and game fandom based in China"
+                        style="border-bottom: 0"> Bilibili</abbr></h4>
+                <table class="table table-striped" style="height: 80px">
+                    <thead>
+                    <tr>
+                        <th><i>Type</i></th>
+                        <th><i>Hot Tags</i></th>
+                    </tr>
+                    </thead>
+                    <tbody align="left">
+                    <tr>
+                        <td>Otaku</td>
+                        <td>Original choreography, 極樂凈土, cosplay, lOVE LIVE!, GARNDELIA</td>
+                    </tr>
+                    <tr>
+                        <td>Traditional</td>
+                        <td>Street Dance, AKB48, Choregraphy, Classic, HIPHOP, JAZZ, MAY J LEE</td>
+                    </tr>
+                    <tr>
+                        <td>Dance Studio</td>
+                        <td>HIPHOP, JAZZ, POPPING, LOCKING, BREAKING, WAACKING, 1M Dance Studio</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p>Not only did the human face, figure, movement contribute to the heat, but shooting techniques are of
+                    great importance.</p>
+                <h4>M1 Dance Studio</h4>
+                <div class="row">
+                    <div class="non-padding col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                        <table class="table table-striped" style="height: 80px">
+                            <thead>
+                            <tr>
+                                <th><i>Top5 Click Volume in One Day</i></th>
+                            </tr>
+                            </thead>
+                            <tbody align="left">
+                            <tr>
+                                <td>1,879,000</td>
+                            </tr>
+                            <tr>
+                                <td>1,210,000</td>
+                            </tr>
+                            <tr>
+                                <td>579,000</td>
+                            </tr>
+                            <tr>
+                                <td>532,000</td>
+                            </tr>
+                            <tr>
+                                <td>518,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="small-padding col-lg-8 col-md-9 col-sm-12 col-xs-12">
+                        <img class="pimg" src="/static/image/casio/videos.jpg">
+                    </div>
+                </div>
+                <h4>Videos on Outdoor Activity</h4>
+                <table class="table table-striped" style="height: 80px">
+                    <thead>
+                    <tr>
+                        <th><i>Website</i></th>
+                        <th><i>Name/Number</i></th>
+                        <th><i>Click</i></th>
+                    </tr>
+                    </thead>
+                    <tbody align="left">
+                    <tr>
+                        <td><a href="http://www.aipai.com">AiPai</a></td>
+                        <td>2013极限运动集锦</td>
+                        <td>600,000+</td>
+                    </tr>
+                    <tr>
+                        <td><a href="www.acfun.tv">Acfun</a></td>
+                        <td>ac1963682</td>
+                        <td>230,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ac1598449</td>
+                        <td>207,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ac2148031</td>
+                        <td>2,3000+</td>
+                    </tr>
+                    <tr>
+                        <td><a href="www.bilibili.com">BiliBili</a></td>
+                        <td>av4168223</td>
+                        <td>187,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>av358927</td>
+                        <td>170,000+</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <h4>Target Users</h4>
+                <p>Age: 20+ 30+</p>
+                <ul class="text">
+                    <li>Those who record dance teaching video.</li>
+                    <li>Those who love outdoor activities.</li>
+                    <li>Those who love taking selfies and recording their life.</li>
+                    <li>Those who love traveling.</li>
+                    <li>Those who are enthusiasm about creativity new things.</li>
+                </ul>
+                <p>We listed the features of our target users again to get some clear analysis.</p>
+            </div> -->
+            <p>What made these videos hot? The dancing skill is definitely one contributing factor, while the shooting
+                technique counted as well. The cameraman continuously move, zoom in, zoom out, etc so that we could feel
+                the rhythm and vigor from the video. Yet these videos are absolutely shot by professional, could we make
+                our camera help the users shoot these dynamic videos easily? Other than dancing videos, there exist many
+                popular videos concerning sports with fantastic shooting skills and effects, also attracting a number of viewers.</p>
+                
+                        <h4>Data of Online Videos</h4>
+                        <div class="row">
+                        <div class="small-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <table class="table table-striped">
+                    <caption>Dance Videos</caption>
+                            <thead>
+                            <tr>
+                                <th><i>Top5 Click Volume in One Day</i></th>
+                            </tr>
+                            </thead>
+                            <tbody align="left">
+                            <tr>
+                                <td>1,879,000</td>
+                            </tr>
+                            <tr>
+                                <td>1,210,000</td>
+                            </tr>
+                            <tr>
+                                <td>579,000</td>
+                            </tr>
+                            <tr>
+                                <td>532,000</td>
+                            </tr>
+                            <tr>
+                                <td>518,000</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+            <div class="small-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <table class="table table-striped">
+                <caption>Sports Videos</caption>
+                    <thead>
+                    <tr>
+                        <th><i>Website</i></th>
+                        <th><i>Name/Number</i></th>
+                        <th><i>Click</i></th>
+                    </tr>
+                    </thead>
+                    <tbody align="left">
+                    <tr>
+                        <td><a href="http://www.aipai.com">AiPai</a></td>
+                        <td>2013极限运动集锦</td>
+                        <td>600,000+</td>
+                    </tr>
+                    <tr>
+                        <td><a href="www.acfun.tv">Acfun</a></td>
+                        <td>ac1963682</td>
+                        <td>230,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ac1598449</td>
+                        <td>207,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>ac2148031</td>
+                        <td>2,3000+</td>
+                    </tr>
+                    <tr>
+                        <td><a href="www.bilibili.com">BiliBili</a></td>
+                        <td>av4168223</td>
+                        <td>187,000+</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>av358927</td>
+                        <td>170,000+</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    </div>
+                    </div>
+
+            <p>Given the passion of young people on dance and sports videos, we redetermined the features of our target users again to get some clear analysis and in turn got our product's target features.</p>
+            <div class="slim">
+            <h4>Target Users</h4>
+                <p>Age: 20+ 30+</p>
+                <ul class="text">
+                    <li>Those who record dance teaching video.</li>
+                    <li>Those who love outdoor activities.</li>
+                    <li>Those who love taking selfies and recording their life.</li>
+                    <li>Those who love traveling.</li>
+                    <li>Those who are enthusiasm about creativity new things.</li>
+                </ul>
+            </div>
+            <br>
+            <h4>Application Areas</h4>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/video_bubbles.png">
+                </div>
+                <div class="non-padding col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                    <h3 style="margin-bottom: 1em;">&nbsp;&nbsp;&nbsp;Target Features</h3>
+                    <ul class="text">
+                        <li>Have appropriate size and weight for easy handling.</li>
+                        <li>Can be Located and fixed at different places easily.</li>
+                        <li>Work with smart phones properly.</li>
+                        <li>Easy to manipulate.</li>
+                        <li>Have attractive appearance.</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Based on the idea of Maru, we developed Planet, a sphere camera with rotatable lens, various accessories
+                and exciting functions. Planet could no only be controlled to rotate, zoom in and out, and shoot, but
+                also provided differed shooting modes, with which the user could take attractive videos of different
+                shooting styles.</p>
+            <h4>Functions and Interface</h4>
+            <div class="row">
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_title.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_function.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_interface.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/planet_interface2.jpg">
+                </div>
+            </div>
+            <p>For Planet, we designed detailed appearance for it. It has double transparent shells for the rotatable
+                structure. It has a really concise appearance, with just one button and basic information including
+                time, battery and connection condition on it. To connect the accessories, a physical interface was
+                located at its bottom.</p>
+            <h4>Appearance</h4>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_render2.jpg">
+            </div>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_render1.jpg">
+            </div>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_render5.jpg">
+            </div>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_render6.jpg">
+            </div>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/planet_render3.jpg">
+            </div>
+            <div class="non-padding col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <img class="pimg" src="/static/image/casio/planet_render4.jpg">
+            </div>
+            <p>Compared to Maru, Planet was a maturer design, in both appearance and function. Endless exploration and
+                elaboration produced Planet.</p>
+        </div>
+
+    </div>
+
+
+    <div class="details-block">
+        <h2>Visual Communication Platform</h2>
+        <div class="heading-line"><br/></div>
+        <div class="s-container">
+            <p>It came to our second subject -- visual communication platform design. Quite a quantity of visual
+                platforms won in the past few decades such as smart phones and smart pads.</p>
+            <h4>Design Process</h4>
+            <img class="pimg" src="/static/image/casio/whymessage.png">
+            <p>We first did brainstorming on visual platforms and got three ideas. For each idea, we listed its keyword,
+                concept, functions, merits and technology.</p>
+            <div style="margin: 5px -5px 15px -5px;" class="row non-padding">
+            <h4>Candidates</h4>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="details-page">
+
+                    <h3>Virtual Bullet Screen</h3>
+                    <h4>1. Keyword</h4>
+                    <p>Expansibility</p>
+                    <h4>2. Concept</h4>
+                    <p>Virtual Bullet Screen is a set of VR system, which can help users post moods and moments on a
+                        certain platform meanwhile check others’ publications through a special virtual reality
+                        screen.</p>
+                </div>
+                </div>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="details-page">
+                    <h3>3D Measurement</h3>
+                    <h4>1. Keyword</h4>
+                    <p>Reality</p>
+                    <h4>2. Concept</h4>
+                    <p>3D measurement means taking photo for a certain object and get 3D information of it. Thus users
+                        can share 3d information of an object or a scene and others can know their experience from the
+                        3d models.</p>
+                </div>
+                </div>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="details-page">
+                    <h3>E-Diary</h3>
+                    <h4>1. Keyword</h4>
+                    <p>Emotion</p>
+                    <h4>2. Concept</h4>
+                    <p>The “e” in E-Diary has two meanings: electronic and exchange. Users, especially couples or family with time difference, can easily share his/her moments and access others on respective terminals.</p>
+                </div>
+                </div>
+            </div>
+
+            <p>However, none of the three ideas was satisfying. Our first two ideas were two focused on technologies while the need is the thing that actually drives the design. Our third keyword, emotion, is too general to bring about detailed and caring design.</p>
+            <p>We reflected on our ideas and seized the point of the time difference between <b>transnational lovers</b>. The growing trend of studying aboard has given birth to an increasing number of transnational lovers. For them, chances are that one wants to share moments when the other has fallen asleep due to the time difference. At the beginning they may leave a message on Wechat. However, days or months after, the lovers usually get exhausted with the boring and tiring way of communication. <b>Time difference</b> makes a gap between their relationship. Passion fades with time going.</p>
+            <p>We did interviews and questionnaires on this group of people to check the number of this group, to see the factors of their quarrels, and to know more about their communication preference, including the communication ways and content.</p>
+            <h4>Questionnaire</h4>
+                <div class="slim row">
+                    <div class="non-padding col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5>Distant Love Duration</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/casio/bar_chart.png">
+                    </div>
+                    <div class="non-padding col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5>Frequency Ranking</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/casio/frequency_chart.png">
+                    </div>
+                    <div class="non-padding col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5>Good Morning/Night</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/casio/goodxx_chart.png">
+                    </div>
+                    <div class="non-padding col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5>Message Leaving</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/casio/pie_chart.png">
+                    </div>
+                    
+            </div>
+
+<!--             <div class="slim">
+                <h4>Basic Info</h4>
+                    <div class="row">
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Age</h5>
+                            <div class="q-line"></div>
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Gender</h5>
+                            <div class="q-line"></div>
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Distant Love Duration</h5>
+                            <div class="q-line"></div>
+                        </div>
+                        <div class="non-padding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="text">
+                        <li>Most young couples have experienced long-distance love.</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <p></p>
+                <h4>Communication Ways</h4>
+                    <div class="row">
+                    <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Frequency Ranking</h5>
+                            <div class="q-line"></div>
+                            <div style="margin-right: 35px;">
+                            <p style="font-size: .7em; text-align: center;"><br/>1. Words    2. Images  3. Speech</p><p style="font-size: .7em; text-align: center;">4. Video   5. Telephone</p></div>
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Good Morning/Night</h5>
+                            <div class="q-line"></div>
+                            <img class="pimg" class="small" src="/static/image/standup/bar_chart.png">
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Message-leaving</h5>
+                            <div class="q-line"></div>
+                            <img class="pimg" class="small" src="/static/image/standup/pie_chart.png">
+                        </div>
+                        <div class="non-padding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="text">
+                            <li>Words make sense in lovers’ communication. Video chatting is a frequent communication way between long-distance lovers.</li>
+                            <li>For long-distance lovers, “good morning” and “good night” usually appear in their conversations. Most couples regard “good morning” and “good night” as important parts of communication.</li>
+                            <li>Lovers expect to see message everyday in the morning, it makes them feel happy, warm and important to the other half. Message leaving give them a good chance to compensate miscommunication due to time-difference.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4>Other</h4>
+                    <div class="row">
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Age</h5>
+                            <div class="q-line"></div>
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Gender</h5>
+                            <div class="q-line"></div>
+                        </div>
+                        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <h5>Distant Love Duration</h5>
+                            <div class="q-line"></div>
+                        </div>
+                    </div>
+            </div> -->
+
+            <p>Further, it occurred to us that the idea could be extended to time difference in other relationships. Busy office worker’s family might suffer from time difference in that a busy father often left home for work quite early and came back in late night, which made the time he spent with family insufficient. Family with grandparents would face this problem as well because the daily schedules of grandchildren and grandparents differ a lot.</p>
+            <div class="row">
+                <h4>Prototype</h4>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/mirror1.jpg">
+                </div>
+                <div class="non-padding col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/mirror2.jpg">
+                </div>
+            </div>
+            <p>We decided our target users and the solutions, to get a vague idea of our product -- message mirror. By making mirror a conveyer of messages, we made the communication a routine and appointment integrated into daily life. Besides, we designed special forms and effects for the messages to make it more interesting and touching. For instance, the user might see a short video of others in the mirror.</p>
+            <p>We made three scenarios for the mirror’s use in different relationships to check our idea and made a prototype.</p>
+            <div class="row">
+                <h4>Scenarios</h4>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/scenario_lover.png">
+                </div>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/scenario_grand.png">
+                </div>
+                <div class="non-padding col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <img class="pimg" src="/static/image/casio/scenario_parent.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="s-container">
+        <p>After a number of iterative presentations and feedbacks, we finally determined to just focus on <b>transnational love</b> and decided our key word: <b>Get Two <font color="#ee2244">Hearts</font> Closer</b>. We aimed to reduce <b>time difference</b> and space obstruction for couples lacking in emotional communication.</p>
+        <h4>Transnarional Love</h4>
+        <img class="pimg" src="/static/image/casio/distancelove.png">
+        <p>We did further analysis on the content of transnational lovers, to find that the topics for communication differed when young people face distinguishing people. For transnational lovers, their topics tend to be constrained to things they have done due to the difference of time and space. However, the interviewees showed special concern on the weather and anniversaries. It would be a breakthrough point for us.</p>
+         <div class="row">
+            <h4>Content and Feature Analysis</h4>
+            <div class="min-padding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/topicanalysis.jpg">
+            </div>
+            <div class="min-padding col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/loverfeatures.jpg">
+            </div>
+        </div>
+        <p>Based on the questionnaires and interviews, we listed three main <b>features of transnational lovers</b>: </p>
+        <ul class="text">
+            <li>They usually suffer from <b>the feeling of distance</b> since they could not get timely communication due to the time difference.</li>
+            <li>Rather than the quantity of communication, they concern more about the <b>quality</b> of communication and the sensation showed in the conversation.</li>
+            <li>They tend to face the lack of <b>topics</b> for communication because of the difference in living environment.</li></ul>
+        <p>We redetermined our <b>goals</b> for better design.</p>
+        <ul class="text">
+            <li>We put our eyes on <b>non-instant</b> information instead of instant information.</li>
+            <li><b>Topics</b> itself is limited, We try to make the massage more valuable.We want to show the value of information.（Pay attention on how to express.)</li>
+            <li>Though there are few opportunities to communicate, We try to create <b>common topics</b> and make them <b>interesting</b>（an intelligent system which can give a lover a topic）</li>
+        </ul>
+        </div>
+
+        <div class="s-container">
+            <p>We made a detailed prototype for our message, which would serve as a common mirror with the beauty of simplicity and integrity and could also show its fascination for communication.
+            <h4>Models</h4>
+            <img class="pimg" src="/static/image/casio/model1.jpg">
+            <h4>Structure</h4>
+            <img class="pimg" src="/static/image/casio/model2.jpg">
+            <p>After times of brainstorming, we added some functions to the mirror and listed all its functions.</p>
+            <ul class="text">
+                <li><b>Message Leaving:</b> Main function. Produce romance by producing various atmospheres. </li>
+                <li><b>Multimedia Communication:</b> Users can doodle or stick patterns on the other's face, show fascinating scenarios and even project images for more interesting communication. </li>
+                <li><b>Impersonate Helper:</b> A little guy holding red strings (a symbol of matchmaker in China) would help create topics between lovers.</li>
+                <li><b>Simultaneity:</b> One could see the other's video records when doing a same thing. For example, they may watch a same movie even though actually they do not watch the movie at the same time.</li>
+            </ul>
+        </div>
+
+        <div class="lg-details-page">
+            <h3>Video Communication</h3>
+                <p>We wanted to improve the sense of romance and interaction in limited communication by multimedia effects. Users may doodle patterns, show certain scenarios and even project images using the other's mirror to send the emotion.</p>
+                <div class="row page-row">
+                <div class="small-padding col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/multimedia1.jpg">
+                </div>
+                <div style="margin-top: 10px;" class="small-padding col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <div class="caption">Vivid. Lucid. Emotional.</div>
+<!--                 <ul class="caption">
+                    <li>Make the messages vivid and easy to understand.</li>
+                    <li>Bring sensation to the messages.</li>
+                </ul> -->
+                </div>
+                </div>
+                <div class="row page-row">
+                <div class="small-padding col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/multimedia2.jpg">
+                </div>
+                <div style="margin-top: 10px;" class="small-padding col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <div class="caption">Convey detailed changes around their environments, which may be ignored by themselves. </div>
+                </div>
+                </div>
+                <div class="row page-row">
+                <div class="small-padding col-lg-10 col-md-9 col-sm-12 col-xs-12">
+                <img class="pimg" style="margin: 0;" src="/static/image/casio/multimedia_scenario.jpg">
+                </div>
+                <div style="margin-top: 10px;" class="small-padding col-lg-2 col-md-3 col-sm-12 col-xs-12">
+                <div class="caption">Transnational couples who got problems due to the distance feel the lover's warmth again through the multimedia information.</div>
+                </div>
+                </div>
+        </div>
+
+        <div class="lg-details-page">
+            <h3>Impersonate Helper</h3>
+                <p>In our research, we found that transnational lovers usually got little topics to talk about due to the differences of time and space. We wanted to help create topics for them to improve their communication experience.</p>
+                <div class="row">
+                    <div style="padding: 50px;" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img class="pimg" src="/static/image/casio/helper1.jpg">
+                        <img class="pimg" src="/static/image/casio/helper2.jpg">
+                        <img class="pimg" src="/static/image/casio/helper3.jpg">
+                    </div>
+                </div>
+        </div>
+
+        <div class="lg-details-page">
+            <h3>Simultaneity</h3>
+                <p>This function was aimed at bringing more time together for the users. The user could share his or her daily life with the other. When one performs a daily event, the mirror would record. And when the other one performs the same or similar activity, he or she could saw the other doing the same thing, just like she or he is keeping him or her company.</p>
+                <div class="row page-row">
+                <div class="small-padding col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/sametime1.jpg">
+                </div>
+                <div style="margin-top: 10px;" class="small-padding col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                <div class="caption">With this function, though the couple could not do the same thing at the same time but they know they did the same thing. And they are spending ‘the same time together’.</div>
+                </div>
+                </div>
+                <div class="row page-row">
+                <div class="small-padding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/sametime2.jpg">
+                </div>
+                </div>
+                <div class="row page-row">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/sametime3.png">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                <div class="caption">When watching a movie, the user's facial expression, behavior, and voice would be recorded unconsciously. Then, when the other watches the same movie, he or she would see the recorded reactions and feel that they are watching movies together.</div>
+                </div>
+                </div>
+                <div class="row page-row">
+                <div class="col-lg-8 col-md-7 col-sm-12 col-xs-12">
+                <img class="pimg" src="/static/image/casio/sametime4.png">
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-12 col-xs-12">
+                <div class="caption">The mirror could also record one's cooking process and share the record with the other when cooking. It would provide a warm feeling as they are cooking together.</div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <a class="back-to-top" href="javascript:window.scrollTo( 0, 0 );"><h6>↑ Back to Top</h6></a>
+
+</div>
+
+
+{% endblock %}
+

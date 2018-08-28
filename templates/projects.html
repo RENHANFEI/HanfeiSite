@@ -1,0 +1,271 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+
+<div style="background-color: #eee;">
+    <aside style="border-right: 2px #ccc dotted;" class="container-fluid">
+        <div class="clear-fix visible-lg visible-md">
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="#research">Research</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#handcrafts">Handcrafts</a></li>
+            </ul>
+        </div>
+    </aside>
+
+<!-- <div class="banner">
+    <div id="banner-text">
+        <h1>Project Showcase</h1>
+        <p>Some of my short projects including handcraft, game, app, etc.</p>
+    </div>
+    <p align="center" id="skrollr">
+        <img class="pimg" align="center" src="/static/image/stepbeats/object.jpg">
+    </p>
+</div> -->
+
+<article id="research" class="cases">
+    <h2>RESEARCH</h2>
+    <div class="case-block row">     
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/tastehealthy.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>TasteHealthy-API</h3>
+        <p class="lead">Jan - May 2017, Individual work</p>
+        <p>TasteHealthy is a mobile app for easy logging and recommendation of tasty and healthy food. During my exchange in NUS, I contributed to this project, gained practical experience in using food recognition and recommendation algorithms, developed a RESTful API by Flask to evaluate users' health conditions, calculate target nutrient and retrieve food data, and implemented an advanced function of nutrition value interval retrieve based on Nutritionix and HPBFOCOS. <a class="grey" target="_blank" href="http://www.brianlim.net/tastehealthy/">link</a></p>
+        </div>
+    </div>
+    <div class="case-block">
+        <div class="row">    
+            <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <img class="pimg" src="/static/image/projects/locus.jpg">
+            </div>
+            <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="heading-line"><br></div>
+            <h3>Locus Determination</h3>
+            <p class="lead">Mar - May 2017, Individual work</p>
+            <p>A more accurate trajectory of the phone motion was derived in this independent course project by recording the the GPS and accelerometer readings, determining their errors and implementing Kalman filter. <a class="grey" target="_blank" href="https://github.com/RENHANFEI/LocusDetermination">link</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/locus1.png">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/locus3.png">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/locus4.png">
+            </div>
+        </div>
+    </div>
+    <div class="case-block row">        
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/aireport.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>AI Report</h3>
+        <p class="lead">Nov 2016 - Mar 2017, Individual work</p>
+        <p>AI Report Edition is a project led by <a class="normal" target="_blank" href="http://www.cad.zju.edu.cn/home/zhx/">Dr. Hongxin Zhang</a>, State Key Lab of CAD &amp; CG, ZJU, aimed at developing AI algorithms to generate journal reports on different areas semi-automatically for governmental decisions. I collected data by Scrapy from influential media, and extracted topics by word frequency counting and natural language processing using LDA and word2vec algorithms. With the collected data, I made interactive heatmaps based on China and world maps to indicate the popularity of a certain topic in a region, along with hottest key words.</p>
+        </div>
+    </div>
+</article>
+
+<article id="games" class="cases">
+    <h2>GAMES</h2>
+    <div class="case-block">
+        <div class="row">   
+            <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <img class="pimg" src="/static/image/projects/hh.jpg">
+            </div>
+            <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="heading-line"><br></div>
+            <h3>Hopeless Hospital</h3>
+            <p class="lead">June - July 2017, 3-member team</p>
+            <p>Hopeless Hospital is a horrible VR game set in an abandoned general hospital once attracted many psychotics for its outstanding capacity, as well as captured certain common people forcefully. Its grocery was just a flash of pan since its patients kept dying with incomplete bodies. The character of this game visits this mysterious hospital to figure out the truth of the old days. <a class="grey" target="_blank" href="https://vimeo.com/242193890">video</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/hh_map.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/hh_scene.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/hh_chart.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="case-block row">        
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/tricktower.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>Trick Tower</h3>
+        <p class="lead">Mar - May 2017, 5-member team</p>
+        <p>Trick Tower is a tower filled with a variety of different puzzles at every level. Trick Tower Inc. (our group) holds regular competitions for participants to race against each other or against the existing time record, for a chance at the prize money. <a class="grey" target="_blank" href="https://www.youtube.com/watch?v=2a1hBDpOdFQ">video</a></p>
+        </div>
+    </div>
+    
+</article>
+
+<article id="apps" class="cases">
+    <h2>APPS</h2>
+    <div class="case-block">
+        <div class="row">     
+            <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <img class="pimg" src="/static/image/projects/petopia.jpg">
+            </div>
+            <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="heading-line"><br></div>
+            <h3>Petopia</h3>
+            <p class="lead">July 2017, 6-member team</p>
+            <p>Petopia is an app to track and help stray animals using crowdfunding. By locus determination and feature detection, users can upload moments to a certain animal’s profile, see its recent activities and donate to it. We also provide adoption service in order to help the stray animals ultimately.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia1.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia2.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia3.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia4.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia5.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia6.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" src="/static/image/projects/petopia7.png">
+            </div>
+            <div class="petopia-img">
+                <img class="pimg petopia-img" style="margin-bottom: 45px;" src="/static/image/projects/petopia8.png">
+            </div>
+        </div>
+    </div>
+    <div class="case-block">
+        <div class="row">     
+            <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <img class="pimg" src="/static/image/projects/musiclight.jpg">
+            </div>
+            <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="heading-line"><br></div>
+            <h3>Music Light</h3>
+            <p class="lead">June - July 2017, 3-member team</p>
+            <p>The Music Light is an interactive table light with three light bulbs. When you touch the conductive tape on the surface, the light will turn on itself and give out a certain sound. I also developed an Android app to help the users control the light as well as record the sound that has been played using the music light. <a class="grey" target="_blank" href="https://youtu.be/ybVvHWSVQb8">video</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/musiclight0.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/musiclight1.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/musiclight2.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="case-block">  
+    <div class="row">      
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/sccs.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>SCCS</h3>
+        <p class="lead">Mar - Apr 2017, 4-member team</p>
+        <p>SCCS is an app for electricians to track and record the conditions of streetlights.</p>
+        </div>
+        </div>
+        <div class="row">
+            <div class="detail-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <img class="pimg" src="/static/image/projects/sccs_analysis.jpg">
+            </div>
+            <div class="detail-img col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <img class="pimg" src="/static/image/projects/sccs_flow.jpg">
+            </div>
+        </div>
+
+    </div>
+    <div class="case-block row">        
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/deadliner.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>Deadliner</h3>
+        <p class="lead">Nov - Dec 2016, 2-member team</p>
+        <p>Deadliner is an Android app trickily combining schedule management and alarming clock.</p>
+        </div>
+    </div>
+</article>
+
+<article id="handcrafts" class="cases">
+    <h2>HANDCRAFTS</h2>
+    <div class="case-block row">        
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/dingsheng.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>Dingsheng Heraldry</h3>
+        <p class="lead">July 2017, 2-member team</p>
+        <p>Dingsheng Heraldy, based on a traditional Chinese dessert Dingshenggao, mainly focuses on the similar effect of indirect comfort and blessings buried in Dingshenggao and Chinese characters when the shape is inspired by Chinese typography. My groupmate and I want our customers get resonance or get inspired with various words and poems on Dingshenggao so that they could even make up their own combination of characters to create their own unique expressions.</p>
+        </div>
+    </div>
+    <div class="case-block">
+        <div class="row">
+            <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <img class="pimg" src="/static/image/projects/universe_chair.jpg">
+            </div>
+            <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+            <div class="heading-line"><br></div>
+            <h3>Universe in an Eggshell</h3>
+            <p class="lead">Oct - Nov 2015, 2-member team</p>
+            <p>This is my first woodwork aimed at crafting a chair which could bring a feeling of embrace and safety.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/universe1.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/universe2.jpg">
+            </div>
+            <div class="detail-img col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img class="pimg" src="/static/image/projects/universe3.jpg">
+            </div>
+        </div>
+    </div>
+        
+    <div class="case-block row">        
+        <div class="case-img col-lg-5 col-md-5 col-sm-5 col-xs-12">
+            <img class="pimg" src="/static/image/projects/redblue.jpg">
+        </div>
+        <div class="case-text col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <div class="heading-line"><br></div>
+        <h3>Red and Blue Chair</h3>
+        <p class="lead">Oct 2015, Individual work</p>
+        <p>Followed the classic Red and Blue Chair, I made a toy chair and crafted a lamp to match it.</p>
+        </div>
+    </div>
+</article>
+</div>
+
+
+{% endblock %}
+

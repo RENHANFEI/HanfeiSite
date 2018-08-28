@@ -1,0 +1,243 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+
+<div class="banner">
+    <div id="banner-text">
+        <h1>StandUp</h1>
+        <p>A Desktop application to stop office workers from sedentary lifestyle.</p>
+    </div>
+    <p class="visible-lg visible-md visible-sm" align="center" id="skrollr">
+        <img align="center" src="/static/image/standup/mockup.png" alt="standup mockup">
+    </p>
+</div>
+
+<div class="details">
+    <div class="summary-block">
+        <h2>Summary</h2>
+        <div class="heading-line"><br/></div>
+        <p>To alleviate current-, and prevent future complications that result from improper posture at the office due
+            to sedentary lifestyle, we designed StandUp, a desktop app providing a new work ethic that allows for small
+            exercises and/or breaks during work time.</p>
+    </div>
+</div>
+
+
+<div class="overview">
+    <div class="row overview-container">
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-time"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Duration</h3>
+                <h4>July 2016</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-globe"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Supervisor</h3>
+                <h4>
+                <a class="dashlink" target="_blanket" href="https://www.tue.nl/en/university/departments/industrial-design/department/staff/detail/ep/e/d/ep-uid/20001067/">Yuan Lu @ TU/e </a><br/>
+                <a class="dashlink" target="_blanket" href="https://www.tue.nl/en/university/departments/industrial-design/department/staff/detail/ep/e/d/ep-uid/20124914/">Ad van Berlo @ TU/e</a><br/>
+                <a class="dashlink" target="_blanket" href="https://nl.linkedin.com/in/gavin-proctor-2493351">Gavin Proctor @ Philips</a></h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-user"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>My Role</h3>
+                <h4>User Researcher<br/>Interface Designer<br/>(5-member team)</h4>
+            </div>
+        </div>
+        <div class="overview-block col-lg-3 col-md-6 col-sm-6 col-xs-12">
+            <div class="overview-icon col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                <h3>Skills</h3>
+                <h4>User Research<br/>Persuasive Design<br/>Prototyping</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="details">
+
+    <div class="details-block">
+        <h2>Background</h2>
+        <div class="heading-line"><br/></div>
+        <p>It is a project done in a workshop held by International Design Institute of Zhejiang University, De
+            Technische Universiteit Eindhoven and Philips, focused on wicked problems. My group was assigned to focus on
+            sub-healthy problems of office workers.</p>
+    </div>
+
+    <div class="details-block">
+        <h2>Process</h2>
+        <p align="center">
+        <div class="heading-line"></div>
+        </p>
+        <!-- <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img class="pimg" src="/static/image/standup/research_data.jpg">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <p class="pic-right">At the first stage, we did some online search, to find that <b>limited physical exercise</b> and lack of sound sleep are two most serious problems for office workers. <br/>To consolidate the statement, we collected data from WeRun, MiBand, a self-made Arduino mat and questionnaires.</p>
+        </div>
+        </div> -->
+        <div class="s-container">
+            <p>At the first stage, we did some online search, to find that <b>limited physical exercise</b> and lack of
+                sound sleep are two most serious problems for office workers. To consolidate the statement, we collected
+                data from WeRun, MiBand, a self-made Arduino mat and questionnaires.</p>
+            <div class="slim">
+                <div class="row" style="margin-bottom: 50px;">
+                    <h4>Questionnarie</h4>
+                    <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <h5>Workload</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/standup/bar_chart.png">
+                    </div>
+                    <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <h5>Sleep</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/standup/pie_chart.png">
+                    </div>
+                    <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                        <h5>Exercise</h5>
+                        <div class="q-line"></div>
+                        <img class="pimg" class="small" src="/static/image/standup/exercise_chart.png">
+                    </div>
+                    <p>Many office workers suffer from heavy workload since they work more than 7.5 hours when 6 is
+                        usually
+                        recommended. Meanwhile, they do not have sufficient sleep nor proper physical exercise.</p>
+                </div>
+                <h4>Data from WeRun, MiBand, Arduino mat</h4>
+                <img class="pimg" style="width: 55%;" src="/static/image/standup/research_data.jpg">
+                <ul class="text">
+                    <li>According to <abbr style="border-bottom: 0;" title="A famous official account on WeChat, where you’ll be able to know exactly how many strides you have taken every day and see how you match up to your friends on WeChat who follow the official account.">WeRun</abbr>, office workers usually have much fewer steps than young students.</li>
+                    <li>In term of <abbr style="border-bottom: 0;" title="A prevalent fitness monitor and sleep tracker.">MiBand</abbr>, most of the subject's sleep is somnolence, which infers undesirable sleeping
+                        state.
+                    </li>
+                    <li>In light of data from <abbr style="border-bottom: 0;" title="A self-made mat enabled to record seated time and posture.">Arduino mat</abbr>, our subject sits all the day with rare physical exercise.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="s-container">
+            <p>It was demonstrated that office workers tend to have unhealthy long working and sitting hours and
+                insufficient exercise so that we decided to concentrate on sedentary lifestyle problems.<!-- </p>
+            <h4>First Interviews and Insights</h4>
+            <img class="pimg" src="/static/image/standup/research_interview.jpg">
+            <p> -->In the following interviews, we focused on interviewing office workers. By doing further interviews on
+                them,
+                we had much more clear <b>user profiles</b>.</p>
+            <div class="row slim">
+                <h4>User Profiles</h4>
+                <div class="profile-left col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img class="pimg" src="/static/image/standup/research_profile1.png">
+                    <div class="profile-line"></div>
+                    <p class="note">My boss shows no sympathy of our working disease. </p>
+                </div>
+                <div class="profile-middle col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img class="pimg" src="/static/image/standup/research_profile2.png">
+                    <div class="profile-line"></div>
+                    <p class="note">My colleagues suffer from shoulder periarthritis, rhinitis caused by
+                        inactivity. </p>
+                </div>
+                <div class="profile-right col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                    <img class="pimg" src="/static/image/standup/research_profile3.png">
+                    <div class="profile-line"></div>
+                    <p class="note">I concentrate on my work and forget to leave my seat except going to the
+                        bathroom. </p>
+                </div>
+            </div>
+        </div>
+        <div class="s-container">
+            <p>We asked for <b>professionals' advice</b>, who told us low-effort physical exercise have great positive
+                impact on health. It inspired us that we could encourage low-effort exercise to improve office workers'
+                health condition.</p>
+            <div class="slim">
+                <img class="pimg" src="/static/image/standup/research_prof.png">
+            </div>
+        </div>
+        <div class="s-container">
+            <p><br/>To visualize our products, we investigated the market to find some competitors including massage
+                products, cushions, and apps, and made a report from <b>market perspective</b>.</p>
+            <div class="slim">
+                <h4>Market Research</h4>
+                <img class="pimg" style="width: 65%;" src="/static/image/standup/research_competitor.jpg">
+                <ul class="text">
+                    <li>There is an increasing popularity of sports products around the world like smart bands and
+                        sports
+                        apps.
+                    </li>
+                    <li>People are paying more attention to health problems and are willing to pay for their health
+                        care.
+                    </li>
+                    <li>Sedentary problem has not become a noticing problem.</li>
+                    <li>Facing sedentary problem, people are just concerned about the bone problems which makes most
+                        consumers buy the products for the elderly.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s-container">
+            <p>After the analysis, we got our journey map meanwhile decided features of our product. The basic idea is
+                to
+                remind the long-sitting office workers to do small exercise at set intervals. To achieve our target, we
+                have
+                to convince the employers, to stimulate the employees, and to let the employees encourage each other. We
+                did
+                brainstorming to include reminder with sensor, QR code, company culture, bonus, etc as our product's
+                possible features.</p>
+            <div class="slim">
+                <h4>Journey Map</h4>
+                <img class="pimg" src="/static/image/standup/research_map.png">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="details-block">
+        <h2>Design</h2>
+        <div class="heading-line"><br/></div>
+        <p>Finally, we decided to design a desktop app that reminds the office workers to stand up and work around at
+            certain intervals. A small collection game is also added, in which the employee can scan to get a piece of
+            puzzle in staff room at break time, exchange with coworkers and complete a puzzle to gain some points.</p>
+            <div class="row">
+        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img class="pimg" src="/static/image/standup/design_boss.png">
+        </div>
+        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img class="pimg" src="/static/image/standup/design_employee.png">
+        </div>
+        <div class="non-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img class="pimg" src="/static/image/standup/design_colleague.png">
+        </div>
+        </div>
+        <p>We set two revenues for economics.</p>
+        <div class="slim">
+        <img class="pimg" src="/static/image/standup/economics.png">
+        </div>
+        <p>Along with one teammate, I made prototype for basic interfaces, and shot a sample video.</p>
+        <a href="/static/image/standup/video.mp4"><img class="pimg" style="margin: 0;" src="/static/image/standup/mockup_video.png"></a>
+<!--         <p>We shot a video for better understanding.</p>
+        <video width="320" height="240" controls>
+            <source src="/static/image/standup/video.mp4" type="video/mp4">
+        </video> -->
+    </div>
+
+    <a class="back-to-top" href="javascript:window.scrollTo( 0, 0 );"><h6>↑ Back to Top</h6></a>
+
+</div>
+
+
+{% endblock %}
+

@@ -1,0 +1,278 @@
+a.normal:link,
+a.normal:active,
+a.normal:visited{
+  color: #333;
+  border-bottom: 1px #333 dashed;
+}
+
+a.normal:hover{
+  color: #888;
+  border-bottom: 1px #888 dashed;
+}
+
+a.normal{
+  text-decoration: none;
+}
+
+a.grey {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a.grey:link,
+a.grey:active,
+a.grey:visited{
+  color: #999;
+  border-bottom: 1px #999 dashed;
+}
+
+a.grey:hover{
+  color: #bbb;
+  border-bottom: 1px #bbb dashed;
+}
+
+@media (min-width: 992px){
+
+.cases {
+  margin: 0 0 0 15%;
+  padding: 50px 50px;
+  text-align: center;
+  background-color: #eee;
+}
+
+div.case-text {
+  padding-left: 30px;
+  text-align: justify;
+}
+
+div.detail-img {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+div.petopia-img {
+  width: 12.5%;
+}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+.cases {
+  margin: 10px auto;
+  padding: 0;
+  width: 90%;
+  text-align: center;
+  background-color: #eee;
+}
+
+div.case-text {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+div.detail-img {
+  padding-left: 0;
+  padding-right: 35px;
+}
+
+div.petopia-img {
+  width: 25%;
+}
+
+}
+
+@media (max-width: 767px){
+.cases {
+  margin: 10px auto;
+  padding: 0;
+  width: 90%;
+  text-align: center;
+  background-color: #eee;
+}
+
+div.case-text {
+  padding: 0;
+  text-align: justify;
+}
+
+div.detail-img {
+  padding: 0;
+}
+
+div.petopia-img {
+  width: 25%;
+}
+
+}
+
+div.petopia-img {
+  margin: 0;
+  padding: 0 5px;
+  float: left;
+}
+
+div.petopia-img img{
+  margin-bottom: 15px;
+  border: 0;
+}
+
+div.case-block {
+  margin: 60px 0;
+  padding: 0;
+}
+
+.cases h2 {
+  text-align: left;
+  font-family: "Optima", "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #222;
+  line-height: 2.4em;
+}
+
+.cases h3 {
+  text-align: left;
+  font-family: "Garamond", sans-serif;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: #888;
+}
+
+.cases p {
+  text-align: justify;
+  text-align: left;
+  font-family: "Optima", "Palatino", "Palatino Linotype", "Times", serif;
+  font-size: 1.05em;
+  color: #444;
+  /*line-height: 1.8em;*/
+}
+
+.cases p.lead {
+  margin: -.2em 0 .8em;
+  color: #222;
+  font-size: .9em;
+  font-family: "Garamond", sans-serif;
+}
+
+.cases img{
+  margin: 0 0 45px 0;
+  width: 100%;
+  height: auto;
+  border: 1px #ddd solid;
+}
+
+.slim {
+  width: 70%;
+  padding: 0;
+  margin: 0 auto;
+  /*padding: 20px auto;*/
+  /*margin: 10px auto 30px auto;*/
+}
+
+div.slim img {
+  /*margin: 0;*/
+  /*width: 95%;*/
+  height: auto;
+  /*box-shadow: 2px 2px 2px #888;*/
+}
+
+div.slim h5 {
+  margin: 5px 0;
+  text-align: left;
+  font-family: "Frutiger", "Trebuchet MS", sans-serif;
+  font-size: .8em;
+  color: #007158;
+}
+
+div.non-padding {
+  padding: 0;
+  text-align: left;
+}
+
+div.non-padding img.small {
+  width: 80%;
+  margin: 0 0 30px 0;
+}
+
+div.non-padding img {
+  margin: 0 0 30px 0;
+}
+
+div.min-padding {
+  padding: 0 2px;
+}
+
+div.s-container {
+  margin-bottom: 75px;
+}
+
+div.ss-container {
+  margin-bottom: 35px;
+}
+
+a.back-to-top h6{
+  font-size: 1.6em;
+  color: #bbb;
+  font-weight: normal;
+  text-align: center;
+}
+
+a.back-to-top:hover h6{
+  color: #888;
+}
+
+a.back-to-top {
+  text-decoration: none;
+}
+
+div.small-padding{
+  padding: 0 10px 0 10px;
+}
+
+div.case-img {
+  padding: 0;
+  margin: 0;
+}
+
+div.case-text {
+  margin-bottom: 15px;
+}
+
+div.heading-line {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 3em;
+  height: .4em;
+  background-color: #ddd;
+}
+
+div.row {
+  margin-left: 0;
+  margin-right: 0;
+  width: auto;
+  /*margin: 0;*/
+}
+
+aside {
+  position: fixed;
+  top: 15%;
+}
+
+aside a{
+  font-size: 1.2em;
+  font-weight: lighter;
+  font-family: "Optima", "Trebuchet MS", sans-serif;
+}
+
+aside a:link,
+aside a:visited,
+aside a:active{
+  color: #888;
+}
+
+aside a:hover{
+  color: #333;
+  background-color: #fff;
+}
+

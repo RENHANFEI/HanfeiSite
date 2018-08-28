@@ -1,0 +1,293 @@
+div.banner {
+  margin: 0;
+  padding: 8% 20% 0 20%;
+  vertical-align: middle;
+  background-color: #eee;
+  background-image: url(/static/image/standup/banner.jpg);
+  background-position: 50% 0%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+div.banner h1 {
+  text-align: center;
+  font-family: "Verdana", "Trebuchet MS", sans-serif;
+  font-size: 2.8vw;
+  color: #fff;
+}
+
+div.banner p {
+  padding-bottom: 6vw;
+  text-align: center;
+  font-family:  "Optima", "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-size: 1.5vw;
+  color: #fff;
+}
+
+div.banner img {
+  width: 60%;
+  height: auto;
+}
+
+div.overview {
+  padding: 36px 0;
+  background-color: #fff;
+}
+
+div.overview-container {
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+}
+
+div.overview h3 {
+  color: #444;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+div.overview h4 {
+  color: #888;
+  font-size: .9em;
+  line-height: 1.4em;
+  font-weight: normal;
+  text-align: left;
+}
+
+.overview a{
+  color: #888;
+  text-decoration: none;
+}
+
+.overview a:link{
+  border-bottom:1px dashed #888;
+}
+
+.overview a:hover{
+  color: #555;
+}
+
+
+.details a:link{
+  color: #444;
+  /*border-bottom:1px dashed #444;*/
+}
+
+.details a:visited{
+  color: #444;
+}
+
+.details a:hover{
+  color: #444;
+}
+
+.details a:active{
+  color: #444;
+}
+
+
+
+.text-link{
+  /*text-decoration: underline;*/
+  border-bottom:1px dashed #444;
+}
+
+div.overview .overview-block {
+  vertical-align: middle;
+}
+
+div.overview .overview-icon {
+  font-size: 2.5em;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+div.details {
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #eee;
+}
+
+@media (min-width: 992px ){
+
+div.details-block {
+  margin: 100px auto;
+  width: 872px;
+}
+
+div.summary-block {
+  margin: 0 auto 80px auto;
+  width: 872px;
+}
+
+}
+
+@media (max-width: 991px) {
+div.details-block {
+  margin: 100px auto;
+  width: 88%;
+}
+
+div.summary-block {
+  margin: 0 auto 80px auto;
+  width: 88%;
+}
+}
+
+@media (min-width: 693px){
+  .slim {
+    width: 610px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 692px) {
+  .slim {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+div.details h2 {
+  text-align: center;
+  font-family: "Optima", "Trebuchet MS", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.8em;
+  color: #f7473f;
+}
+
+div.details h3 {
+  text-align: left;
+  font-family: "Optima", "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #111;
+}
+
+div.details h4 {
+  margin: 20px 0 10px 0;
+  text-align: center;
+  font-family: "Frutiger", "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+
+ul.text li,
+div.details p {
+  text-align: justify;
+  text-align: left;
+  font-family: "Optima", "Palatino", "Palatino Linotype", "Times", serif;
+  font-size: 1.2em;
+  color: #444;
+  line-height: 1.8em;
+}
+
+div.details img,
+div.details video {
+  margin: 15px 0 80px 0;
+  width: 100%;
+  height: auto;
+  /*box-shadow: 2px 2px 2px #888;*/
+}
+
+div.heading-line {
+  margin: 1em auto 2.5em auto;
+  padding: 0;
+  text-align: center;
+  width: 3em;
+  height: .4em;
+  background-color: #f7473f;
+}
+
+div.profile-line {
+  margin: 0 auto 1em auto;
+  padding: 0;
+  text-align: center;
+  height: .15em;
+  width: 85%;
+  background-color: #f7473f;
+}
+
+div.profile-left {
+  padding: 0 2vw 0 0;
+}
+
+div.profile-middle {
+  padding: 0 1vw;
+}
+
+div.profile-right {
+  padding: 0 0 0 2vw;
+}
+
+div.profile-left p,
+div.profile-middle p,
+div.profile-right p {
+  /*text-align: justify;*/
+  font-size: 1.1vw;
+  color: #666;
+  font-family: "Frutiger", "Trebuchet MS", sans-serif;
+}
+
+div.slim img {
+  margin: 15px 0;
+  /*width: 95%;*/
+  height: auto;
+  /*box-shadow: 2px 2px 2px #888;*/
+}
+
+div.slim h5 {
+  margin: 5px 0;
+  text-align: left;
+  font-family: "Frutiger", "Trebuchet MS", sans-serif;
+  font-size: .8em;
+  color: #f7473f;
+}
+
+div.q-line {
+  margin: 0 0 .3em 0;
+  padding: 0;
+  text-align: center;
+  height: .12em;
+  width: 75%;
+  background-color: #f7473f;
+}
+
+div.non-padding {
+  padding: 0;
+  text-align: left;
+}
+
+div.non-padding img.small {
+  width: 80%;
+  margin: 0 0 30px 0;
+}
+
+div.non-padding img {
+  margin: 0 0 30px 0;
+}
+
+div.s-container {
+  margin-bottom: 60px;
+}
+
+a.back-to-top h6{
+  font-size: 1.6em;
+  color: #bbb;
+  font-weight: normal;
+}
+
+a.back-to-top:hover h6{
+  color: #888;
+}
+
+a.back-to-top{
+  text-decoration: none;
+}

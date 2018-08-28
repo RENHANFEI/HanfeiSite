@@ -1,0 +1,68 @@
+div.gallery {
+  padding: 5px 25px 25px;
+}
+
+div.card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+div.card span {
+    display: none;
+}
+
+div.card:hover {
+    border: 1px solid #777;
+}
+
+div.card:hover span{
+  padding: 10%;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  border: 4px #fff solid;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: #000;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  font-family: "Optima", "Trebuchet MS", sans-serif;
+ }
+
+div.card:hover span .title{
+  position: absolute;
+  top: 20%;
+  transform: translateY(-20%);
+  font-size: 2.3em;
+  /*font-weight: bold;*/
+}
+
+div.card:hover span .time{
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+}
+
+div.card:hover span .sup{
+  margin: 0;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+  font-size: 1.1em;
+}
+
+div.card img {
+    width: 100%;
+    height: auto;
+}
+
+div.card-desc {
+    padding: 15px;
+    text-align: center;
+}

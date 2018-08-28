@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/image/favicon.ico" type="image/x-icon">
+    {% for style in styles %}
+    <link rel="stylesheet" href="/static/css/{{style}}">
+    {% endfor %}
+</head>
+
+<div id="outerdiv" style="position: fixed; top: 0;left: 0; background: rgba(0,0,0,0.7); z-index: 2; width: 100%; height: 100%; display: none;">
+    <div id="innerdiv" style="position:absolute;">
+        <img id="bigimg" src="" />
+    </div>
+</div>
+
+<body class="container-body">
+
+<nav style="border-bottom: 0; padding: 0 5px;" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">Switch Navbar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a style="color: #333; font-family: 'Futura', 'Trebuchet MS', 'Verdana', sans-serif; line-height: 1.3em;" class="navbar-brand" href="/">HANFEI REN's <font color="#aaa">Portfolio</font></a>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <div class="visible-lg visible-md visible-sm">
+        </div>
+            <ul style="font-family: 'Futura', 'Trebuchet MS', 'Verdana', sans-serif; font-weight: lighter;" class="nav navbar-nav navbar-right">
+       {% ifequal nav "work" %}
+                <li class="dropdown"><a style="color: #333;" class="dropdown-toggle" href="/">WORK</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/cubicle">Cubicle</a></li>
+                        <li><a href="/casio">Casio IUR</a></li>
+                        <li><a href="/kiwi">Kiwi</a></li>
+                        <li><a href="/standup">StandUp</a></li>
+                        <li><a href="/stepbeats">StepBeats</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="/resume">RESUME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                {% endifequal %}
+                {% ifequal nav "about" %}
+                <li class="dropdown"><a class="dropdown-toggle" href="/">WORK</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/cubicle">Cubicle</a></li>
+                        <li><a href="/casio">Casio IUR</a></li>
+                        <li><a href="/kiwi">Kiwi</a></li>
+                        <li><a href="/standup">StandUp</a></li>
+                        <li><a href="/stepbeats">StepBeats</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="/resume">RESUME</a></li>
+                <li class="nav-active"><a style="color: #333;" href="/about">ABOUT</a></li>
+                {% endifequal %}
+                {% ifequal nav "project" %}
+                <li class="dropdown"><a style="color: #333;" class="dropdown-toggle" href="/">WORK</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/cubicle">Cubicle</a></li>
+                        <li><a href="/casio">Casio IUR</a></li>
+                        <li><a href="/kiwi">Kiwi</a></li>
+                        <li><a href="/standup">StandUp</a></li>
+                        <li><a href="/stepbeats">StepBeats</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="/resume">RESUME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                {% endifequal %}
+                {% ifequal nav "error" %}
+                <li class="dropdown"><a class="dropdown-toggle" href="/">WORK</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/cubicle">Cubicle</a></li>
+                        <li><a href="/casio">Casio IUR</a></li>
+                        <li><a href="/kiwi">Kiwi</a></li>
+                        <li><a href="/standup">StandUp</a></li>
+                        <li><a href="/stepbeats">StepBeats</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                    </ul>
+                </li>
+                <li><a target="_blank" href="/resume">RESUME</a></li>
+                <li><a href="/about">ABOUT</a></li>
+                {% endifequal %}
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block mainbody %}
+{% endblock %}
+
+<div class="footing">
+    <p>©️ Hanfei Ren 2017</p>
+</div>
+</body>
+
+
+<script type="text/javascript" src="/static/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/static/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script type="text/javascript">
+    window.onscroll = function () {
+        var img = document.getElementById("skrollr");
+        var text = document.getElementById("banner-text");
+        img.style.marginTop = document.documentElement.scrollTop / (-3) + "px";
+        text.style.opacity = 1.2 - document.documentElement.scrollTop / 180;
+    }
+</script>
+<script type="text/javascript">  
+    $(function(){  
+        $(".pimg").click(function(){  
+            var _this = $(this);//将当前的pimg元素作为_this传入函数  
+            imgShow("#outerdiv", "#innerdiv", "#bigimg", _this);  
+        });  
+    });  
+
+    function imgShow(outerdiv, innerdiv, bigimg, _this){  
+        var src = _this.attr("src");//获取当前点击的pimg元素中的src属性  
+        $(bigimg).attr("src", src);//设置#bigimg元素的src属性  
+      
+            /*获取当前点击图片的真实大小，并显示弹出层及大图*/  
+        $("<img/>").attr("src", src).load(function(){  
+            var windowW = $(window).width();//获取当前窗口宽度  
+            var windowH = $(window).height();//获取当前窗口高度  
+            var realWidth = this.width;//获取图片真实宽度  
+            var realHeight = this.height;//获取图片真实高度  
+            var imgWidth, imgHeight;  
+            var scale = 0.8;//缩放尺寸，当图片真实宽度和高度大于窗口宽度和高度时进行缩放  
+              
+            if(realHeight>windowH*scale) {//判断图片高度  
+                imgHeight = windowH*scale;//如大于窗口高度，图片高度进行缩放  
+                imgWidth = imgHeight/realHeight*realWidth;//等比例缩放宽度  
+                if(imgWidth>windowW*scale) {//如宽度扔大于窗口宽度  
+                    imgWidth = windowW*scale;//再对宽度进行缩放  
+                }  
+            } else if(realWidth>windowW*scale) {//如图片高度合适，判断图片宽度  
+                imgWidth = windowW*scale;//如大于窗口宽度，图片宽度进行缩放  
+                            imgHeight = imgWidth/realWidth*realHeight;//等比例缩放高度  
+            } else {//如果图片真实高度和宽度都符合要求，高宽不变  
+                imgWidth = realWidth;  
+                imgHeight = realHeight;  
+            }  
+                    $(bigimg).css("width",imgWidth);//以最终的宽度对图片缩放  
+              
+            var w = (windowW-imgWidth)/2;//计算图片与窗口左边距  
+            var h = (windowH-imgHeight)/2;//计算图片与窗口上边距  
+            $(innerdiv).css({"top":h, "left":w});//设置#innerdiv的top和left属性  
+            $(outerdiv).fadeIn("fast");//淡入显示#outerdiv及.pimg  
+        });  
+          
+        $(outerdiv).click(function(){//再次点击淡出消失弹出层  
+            $(this).fadeOut("fast");  
+        });  
+    }  
+</script>
+</html>
