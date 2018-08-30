@@ -17,5 +17,5 @@ urlpatterns = [
     url(r'^kiwi$', view.kiwi),
     url(r'^projects$', view.projects),
     url(r'^about$', view.about),
-    url(r'^resume$', RedirectView.as_view(url='static/resume.pdf')),
+    url(r'^resume$', RedirectView.as_view(url='static/Resume_HanfeiRen.pdf')),
 ]
