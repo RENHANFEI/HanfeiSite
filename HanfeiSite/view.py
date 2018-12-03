@@ -139,6 +139,7 @@ def vcd(request):
                         str(period), str(now_time)]) + '\n'
                     f.write(record)
 
+            if pair_id < pair_num:
                 pair_id += 1
 
         if pair_id < pair_num:
