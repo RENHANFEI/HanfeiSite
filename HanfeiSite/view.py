@@ -160,7 +160,7 @@ def vcd(request):
     context['group_id'] = group_id
     context['pair_id'] = pair_id
     context['pair_num'] = pair_num
-    if context['process'] != 100:
+    if 'process' not in context:
         context['process'] = int(pair_id * 1000 / pair_num) / 10.
     
     response = render(request, 'vcd.html', context)
