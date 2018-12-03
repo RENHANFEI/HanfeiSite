@@ -19,4 +19,5 @@ urlpatterns = [
     url(r'^about$', view.about),
     url(r'^resume$', RedirectView.as_view(url='static/Resume_HanfeiRen.pdf')),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/image/favicon.ico')),
+    url(r'^vcd$', view.vcd),
 ]

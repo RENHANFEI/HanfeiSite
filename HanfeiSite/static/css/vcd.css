@@ -1,0 +1,90 @@
+div.main {
+    padding: 60px 150px;
+}
+
+div.note {
+    padding: 0 0 20px 0;
+  
+}
+
+div.note p {
+    text-align: left;
+    font-family:  "Optima", "Trebuchet MS", sans-serif;
+    font-size: 1.15em;
+    color: #555;
+}
+
+div.note a:link {
+    color: #555;
+    font-style: italic;
+    /*border-bottom:1px dashed #555;*/
+}
+
+div.note a:visited {
+    color: #555;
+    font-style: italic;
+}
+
+div.note a:hover {
+    color: #000;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+div.exp {
+    margin: 0;
+    color: #333;
+}
+
+div.display {
+    padding: 5px 15px 20px 0;
+}
+
+div.display img {
+    width:100%;
+}
+
+div.display p {
+    text-align: center;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0 0 .2em 0;
+    color: #666;
+}
+
+div.assess {
+    padding: 20px 10px;
+    font-family: "Verdana", "Trebuchet MS", sans-serif;
+}
+
+div.assess h3 {
+    margin: 0;
+    text-align: left;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+div.assess h4 {
+    text-align: left;
+    font-size: .9em;
+    line-height: 1.1em;
+    font-style: italic;
+    color: #888;
+}
+
+td.option {
+    line-height: 1.85em;
+    font-size: 1.1em;
+    font-style: normal;
+}
+
+table.options {
+    margin: 12px 0;
+}
+
+input.btn-confirm {
+    width: 200px;
+    font-size: 1.1em;
+    align-content: flex-end;
+}
