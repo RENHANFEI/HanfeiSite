@@ -119,7 +119,7 @@ def vcd(request):
             # check validity
             now_time = time()
             period = now_time - start_time
-            if pair_id < pair_num:
+            if pair_id < pair_num and pair_id >= 3: # first three for adaptation
                 if period >= 1.5:
                     # get pair and store it
                     rating = request.POST['rating']
