@@ -18,18 +18,18 @@ div.note p {
 }
 
 div.note a:link {
-    color: #555;
+    color: #158;
     font-style: italic;
-    /*border-bottom:1px dashed #555;*/
+    /*border-bottom:1px dashed #158;*/
 }
 
 div.note a:visited {
-    color: #555;
+    color: #158;
     font-style: italic;
 }
 
 div.note a:hover {
-    color: #000;
+    color: #26A;
     text-decoration: underline;
     font-style: italic;
 }
