@@ -139,7 +139,7 @@ def vcd(request):
                         str(period), str(now_time)]) + '\n'
                     f.write(record)
 
-            if pair_id <= pair_num - 1:
+            if pair_id < pair_num - 1:
                 pair_id += 1
                 pair = group[pair_id]
 
