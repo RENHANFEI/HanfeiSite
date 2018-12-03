@@ -1,5 +1,8 @@
 div.main {
-    padding: 60px 150px;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    padding: 60px 0;
 }
 
 div.note {
