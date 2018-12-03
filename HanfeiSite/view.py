@@ -141,12 +141,12 @@ def vcd(request):
 
                 pair_id += 1
 
-            if pair_id < pair_num:
-                pair = group[pair_id]
+        if pair_id < pair_num:
+            pair = group[pair_id]
 
-            else:
-                pair = group[pair_id - 1]
-                context['submit'] = False
+        else:
+            pair = group[pair_id - 1]
+            context['submit'] = False
 
     # if no group_id, generate one and initialize pair_id to 0
     else:
