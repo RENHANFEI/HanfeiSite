@@ -20,18 +20,27 @@
             <h4>{{process}}% Completed</h4>
             <form role="form" action="/vcd" method="post">
                 {% csrf_token %}
-                <table class="options">
-                    <tr><td class="option"><input value="-3" name="rating" type="radio"> Much Worse</input></td></tr>
-                    <tr><td class="option"><input value="-2" name="rating" type="radio"> Worse</input></td></tr>
-                    <tr><td class="option"><input value="-1" name="rating" type="radio"> Slightly Worse</input></td></tr>
-                    <tr><td class="option"><input value="0" name="rating" type="radio"> The Same</input></td></tr>
-                    <tr><td class="option"><input value="1" name="rating" type="radio"> Slightly Better</input></td></tr>
-                    <tr><td class="option"><input value="2" name="rating" type="radio"> Better</input></td></tr>
-                    <tr><td class="option"><input value="3" name="rating" type="radio"> Much Better</input></td></tr>
-                </table>
                 {% if submit %}
+                    <table class="options">
+                        <tr><td class="option"><input value="-3" name="rating" type="radio"> Much Worse</input></td></tr>
+                        <tr><td class="option"><input value="-2" name="rating" type="radio"> Worse</input></td></tr>
+                        <tr><td class="option"><input value="-1" name="rating" type="radio"> Slightly Worse</input></td></tr>
+                        <tr><td class="option"><input value="0" name="rating" type="radio"> The Same</input></td></tr>
+                        <tr><td class="option"><input value="1" name="rating" type="radio"> Slightly Better</input></td></tr>
+                        <tr><td class="option"><input value="2" name="rating" type="radio"> Better</input></td></tr>
+                        <tr><td class="option"><input value="3" name="rating" type="radio"> Much Better</input></td></tr>
+                    </table>
                     <input id="submit" type="submit" value="Confirm" class="btn btn-primary btn-confirm" disabled="disabled">
                 {% else %}
+                    <table class="options">
+                        <tr><td class="option"><input value="-3" name="rating" type="radio" disabled="disabled"> Much Worse</input></td></tr>
+                        <tr><td class="option"><input value="-2" name="rating" type="radio" disabled="disabled"> Worse</input></td></tr>
+                        <tr><td class="option"><input value="-1" name="rating" type="radio" disabled="disabled"> Slightly Worse</input></td></tr>
+                        <tr><td class="option"><input value="0" name="rating" type="radio" disabled="disabled"> The Same</input></td></tr>
+                        <tr><td class="option"><input value="1" name="rating" type="radio" disabled="disabled"> Slightly Better</input></td></tr>
+                        <tr><td class="option"><input value="2" name="rating" type="radio" disabled="disabled"> Better</input></td></tr>
+                        <tr><td class="option"><input value="3" name="rating" type="radio" disabled="disabled"> Much Better</input></td></tr>
+                    </table>
                     <input type="submit" value="Completed! Thank you." class="btn btn-primary btn-confirm disabled">
                 {% endif %}
             </form>
