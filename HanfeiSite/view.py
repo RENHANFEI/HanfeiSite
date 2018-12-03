@@ -120,24 +120,24 @@ def vcd(request):
             now_time = time()
             period = now_time - start_time
             if pair_id < pair_num and pair_id >= 3: # first three for adaptation
-                if period >= 1.5:
-                    # get pair and store it
-                    rating = request.POST['rating']
-                    # store it
-                    # context['record'] = sys.path[0] + record_path
-                    module_dir = os.path.dirname(__file__)  # get current directory
-                    file_path = os.path.join(module_dir, record_path)
-                    with open(file_path, 'a+') as f:
-                        im1, im2 = group[pair_id]
-                        im, param1 = im1.split('.')[0].split('_')
-                        param2 = im2.split('.')[0].split('_')[1]
-                        model1 = param1[:-1]
-                        size1 = param1[-1]
-                        model2 = param2[:-1]
-                        size2 = param2[-1]
-                        record = ','.join([im, model1, size1, model2, size2, rating, 
-                            str(period), str(now_time)]) + '\n'
-                        f.write(record)
+            
+                # get pair and store it
+                rating = request.POST['rating']
+                # store it
+                # context['record'] = sys.path[0] + record_path
+                module_dir = os.path.dirname(__file__)  # get current directory
+                file_path = os.path.join(module_dir, record_path)
+                with open(file_path, 'a+') as f:
+                    im1, im2 = group[pair_id]
+                    im, param1 = im1.split('.')[0].split('_')
+                    param2 = im2.split('.')[0].split('_')[1]
+                    model1 = param1[:-1]
+                    size1 = param1[-1]
+                    model2 = param2[:-1]
+                    size2 = param2[-1]
+                    record = ','.join([im, model1, size1, model2, size2, rating, 
+                        str(period), str(now_time)]) + '\n'
+                    f.write(record)
 
                 pair_id += 1
 
