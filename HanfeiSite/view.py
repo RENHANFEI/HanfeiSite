@@ -139,13 +139,14 @@ def vcd(request):
                         str(period), str(now_time)]) + '\n'
                     f.write(record)
 
-            if pair_id < pair_num - 1:
-                pair_id += 1
+            pair_id += 1
+
+            if pair_id < pair_num:
                 pair = group[pair_id]
 
             else:
+                pair = group[pair_id - 1]
                 context['submit'] = False
-                context['process'] = 100.0
 
     # if no group_id, generate one and initialize pair_id to 0
     else:
@@ -160,8 +161,7 @@ def vcd(request):
     context['group_id'] = group_id
     context['pair_id'] = pair_id
     context['pair_num'] = pair_num
-    if 'process' not in context:
-        context['process'] = int(pair_id * 1000 / pair_num) / 10.
+    context['process'] = int(pair_id * 1000 / pair_num) / 10.
     
     response = render(request, 'vcd.html', context)
     response.set_cookie("pair_id", pair_id)
