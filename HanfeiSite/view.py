@@ -113,7 +113,6 @@ def vcd(request):
         start_time = float(request.COOKIES['start_time'])
 
         group = vcd_pairs[group_id]
-        pair = group[pair_id]
 
         # if post, get rating
         if request.POST:
@@ -129,7 +128,7 @@ def vcd(request):
                     module_dir = os.path.dirname(__file__)  # get current directory
                     file_path = os.path.join(module_dir, record_path)
                     with open(file_path, 'a+') as f:
-                        im1, im2 = pair
+                        im1, im2 = group[pair_id]
                         im, param1 = im1.split('.')[0].split('_')
                         param2 = im2.split('.')[0].split('_')[1]
                         model1 = param1[:-1]
