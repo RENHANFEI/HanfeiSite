@@ -101,7 +101,7 @@ def vcd(request):
     context = {}
     context['title'] = 'VCD Image Quality Assessment'
     context['styles'] = ['vcd.css']
-
+    context['nav'] = 'error'
     now_time = time()
     context['submit'] = True
 
