@@ -136,7 +136,7 @@ def vcd(request):
                     param1 = im1.split('.')[0]
                     param2 = im2.split('.')[0]
                     record = param1.replace('_', ',') + ',' + param2.replace('_', ',') \
-                        + ',' + rating + ',' + str(period) '\n'
+                        + ',' + rating + ',' + str(period) + '\n'
                     f.write(record)
 
             if pair_id < pair_num:
