@@ -110,7 +110,7 @@ def vcd(request):
     context['submit'] = True
 
     # have group_id, check if is the last image
-    if "group_id" in request.COOKIES and "pair_id" in request.COOKIES and "start_time" in request.COOKIES:
+    if "new_group_id" in request.COOKIES and "new_pair_id" in request.COOKIES and "new_start_time" in request.COOKIES:
 
         group_id = int(request.COOKIES['group_id'])
         pair_id = int(request.COOKIES['pair_id'])
@@ -136,7 +136,7 @@ def vcd(request):
                     param1 = im1.split('.')[0]
                     param2 = im2.split('.')[0]
                     record = param1.replace('_', ',') + ',' + param2.replace('_', ',') \
-                        + ',' + rating + '\n'
+                        + ',' + rating + ',' + str(period) '\n'
                     f.write(record)
 
             if pair_id < pair_num:
@@ -166,9 +166,9 @@ def vcd(request):
     context['process'] = int(pair_id * 1000 / pair_num) / 10.
     
     response = render(request, 'vcd.html', context)
-    response.set_cookie("pair_id", pair_id)
-    response.set_cookie("group_id", group_id)
-    response.set_cookie("start_time", now_time)
+    response.set_cookie("new_pair_id", pair_id)
+    response.set_cookie("new_group_id", group_id)
+    response.set_cookie("new_start_time", now_time)
     return response
 
 
