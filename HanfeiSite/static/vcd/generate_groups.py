@@ -43,7 +43,7 @@ class GroupGenerator(object):
             pairs.extend(adaptation)
             pairs = list(reversed(pairs))
 
-            groups.extend(pairs)
+            groups.append(pairs)
 
         print(groups)
 

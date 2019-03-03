@@ -97,7 +97,7 @@ def resume(request):
 import os
 from time import time
 from random import randint
-from vcd_settings import *  # get vcd_pairs and vcd_dir
+from .vcd_settings import *  # get vcd_pairs and vcd_dir
 
 # for vision correcting displays (MEng capstone)
 def vcd(request):
@@ -135,8 +135,8 @@ def vcd(request):
                     im1, im2 = group[pair_id]
                     param1 = im1.split('.')[0]
                     param2 = im2.split('.')[0]
-                    record = param1.replace('_', ',') + param2.replace('_', ',') \
-                        + '\n'
+                    record = param1.replace('_', ',') + ',' + param2.replace('_', ',') \
+                        + ',' + rating + '\n'
                     f.write(record)
 
             if pair_id < pair_num:
@@ -156,6 +156,7 @@ def vcd(request):
         pair = vcd_pairs[group_id][pair_id]
 
     # show images
+    print(pair)
     im1, im2 = pair
     context['im1'] = os.path.join(vcd_dir, im1)
     context['im2'] = os.path.join(vcd_dir, im2)
