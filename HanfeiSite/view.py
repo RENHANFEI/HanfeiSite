@@ -110,11 +110,11 @@ def vcd(request):
     context['submit'] = True
 
     # have group_id, check if is the last image
-    if "new_group_id" in request.COOKIES and "new_pair_id" in request.COOKIES and "new_start_time" in request.COOKIES:
+    if 'new_group_id' in request.COOKIES and 'new_pair_id' in request.COOKIES and 'new_start_time' in request.COOKIES:
 
-        group_id = int(request.COOKIES['group_id'])
-        pair_id = int(request.COOKIES['pair_id'])
-        start_time = float(request.COOKIES['start_time'])
+        group_id = int(request.COOKIES['new_group_id'])
+        pair_id = int(request.COOKIES['new_pair_id'])
+        start_time = float(request.COOKIES['new_start_time'])
 
         group = vcd_pairs[group_id]
 
@@ -166,9 +166,9 @@ def vcd(request):
     context['process'] = int(pair_id * 1000 / pair_num) / 10.
     
     response = render(request, 'vcd.html', context)
-    response.set_cookie("new_pair_id", pair_id)
-    response.set_cookie("new_group_id", group_id)
-    response.set_cookie("new_start_time", now_time)
+    response.set_cookie('new_pair_id', pair_id)
+    response.set_cookie('new_group_id', group_id)
+    response.set_cookie('new_start_time', now_time)
     return response
 
 
