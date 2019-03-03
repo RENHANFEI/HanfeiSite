@@ -1,3 +1,5 @@
+__author__ = 'Hanfei'
+
 from django.shortcuts import render
 from django.http import StreamingHttpResponse
 from . import settings
@@ -90,6 +92,8 @@ def resume(request):
 
     return response
 
+
+# for vcd experiment
 import os
 from time import time
 from random import randint
@@ -119,7 +123,7 @@ def vcd(request):
             # check validity
             now_time = time()
             period = now_time - start_time
-            if pair_id < pair_num and pair_id >= 3: # first three for adaptation
+            if pair_id < pair_num and pair_id >= adapt_num: # first four for adaptation
             
                 # get pair and store it
                 rating = request.POST['rating']
@@ -129,14 +133,10 @@ def vcd(request):
                 file_path = os.path.join(module_dir, record_path)
                 with open(file_path, 'a+') as f:
                     im1, im2 = group[pair_id]
-                    im, param1 = im1.split('.')[0].split('_')
-                    param2 = im2.split('.')[0].split('_')[1]
-                    model1 = param1[:-1]
-                    size1 = param1[-1]
-                    model2 = param2[:-1]
-                    size2 = param2[-1]
-                    record = ','.join([im, model1, size1, model2, size2, rating, 
-                        str(period), str(now_time)]) + '\n'
+                    param1 = im1.split('.')[0]
+                    param2 = im2.split('.')[0]
+                    record = param1.replace('_', ',') + param2.replace('_', ',') \
+                        + '\n'
                     f.write(record)
 
             if pair_id < pair_num:
